@@ -28,7 +28,7 @@ describe("last", function() {
 });
 describe("palindrome", function() {
   it("returns false on non palindromes", function () {
-    expect( palindrome("glenn")).toBeFalsey();
+    expect( palindrome("glenn")).toBeFalsy();
   });
   it( "returns true on palindromes", function () {
     expect( palindrome("anna")).toBeTruthy();
@@ -48,6 +48,6 @@ describe("squareRoot", function() {
     expect(squareRoot(4096)).toBeTruthy();
   });
   it("says if a number doesnt have a integer square root", function() {
-    expect(squareRoot(333)).toBeFalsey();
+    expect(squareRoot(333)).toBeFalsy();
   });
 });
