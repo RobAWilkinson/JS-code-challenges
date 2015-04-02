@@ -39,17 +39,31 @@ function howManyLightsabersDoYouOwn(name) {
 }
 
 function last(input) {
-	if (typeof(input) === "string") {
-		console.log(input.charAt(input.length-1))
+	if (typeof(input) == "string") {
+		return input.charAt(input.length-1)
 	}
-	else if (typeof(input) === "object") {
-		console.log(input[input.length-1])
+	else if (typeof(input) == "object") {
+		return input.pop()
 	}
 }
+
+last([1,2,3,4])
 
 function makeChange(money) {
-
+	var dollars = 0;
+	var change = 0;
+	var quarters = 0;
+	var dimes = 0;
+	var nickles = 0;
+	var pennies = 0;
+	if (money > 1) {
+		dollars = Math.floor(money);
+		change = money - Math.floor(money)
+	}
+	console.log('dollars: ' + dollars + 'change: ' + change)
 }
+
+// makeChange(1.32)
 
 function palindrome(string) {
 	var array = string.toLowerCase().split('');
