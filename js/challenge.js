@@ -13,7 +13,6 @@ function evenlyDivide(int) {
 		if (int % i === 0) {
 			myArray.push(i);
 		}
-
 	}
 	return myArray;
 }
@@ -29,7 +28,7 @@ function howManyLightsabersDoYouOwn(name) {
 
 function last(input) {
     if (typeof input === "string") {
-        var x = input.split("").pop()
+        var x = input.split("").pop();
 	    return x;
     }
     else {
@@ -62,8 +61,8 @@ function typing(input) {
 }
 
 String.prototype.reverse = function(input) {
-   var x =  this.split("")
-   x = x.reverse()
+   var x =  this.split("");
+   x = x.reverse();
    return x.join("");
 }
 
