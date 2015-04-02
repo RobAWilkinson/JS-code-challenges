@@ -47,8 +47,6 @@ function last(input) {
 	}
 }
 
-last([1,2,3,4])
-
 function makeChange(money) {
 	var dollars = 0;
 	var change = 0;
