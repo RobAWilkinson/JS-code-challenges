@@ -1,7 +1,7 @@
 ghost = {
   color: function() {
     colors = ['white','yellow','purple','red'];
-    return colors[Math.floor(Math.rand()*colors.length)];
+    return colors[Math.floor(Math.random()*colors.length)];
   }
 };
 
